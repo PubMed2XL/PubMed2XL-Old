@@ -1,0 +1,4 @@
+
+.env
+config/settings_ignore.py
+apps/pubmed2xl/static/pubmed2xl/test.txt
