@@ -16,16 +16,14 @@ import pandas as pd
 from .forms import GetPMIDsForm
 from .helpers import get_all_data, get_xml
 
-API_KEY = settings.NCBI_API_KEY
+N = 300
 APP_PATH = os.path.dirname(os.path.abspath(__file__)) # Gets path of the _init_.py file
 file_path = os.path.join(APP_PATH, "temp")
-
-N = 300
 MEDLINE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed"
-API = "&api_key=" + API_KEY
-RETTYPE = "&rettype=medline"
-MEDLINE_TEXT_URL = MEDLINE_URL + API + RETTYPE + "&retmode=text&id="
-MEDLINE_XML_URL = MEDLINE_URL + API + RETTYPE + "&retmode=xml&id="
+MEDLINE_URL = MEDLINE_URL + "&api_key=" + settings.NCBI_API_KEY
+MEDLINE_URL = MEDLINE_URL + "&rettype=medline"
+MEDLINE_TEXT_URL = MEDLINE_URL + "&retmode=text&id="
+MEDLINE_XML_URL = MEDLINE_URL + "&retmode=xml&id="
 TESTING = False
 DECLARATION_AND_DOCTYPE = '''<?xml version="1.0" ?>
 <!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
