@@ -17,6 +17,7 @@ from .forms import GetPMIDsForm
 from .helpers import get_all_data, get_xml
 
 N = 300
+TESTING = False
 APP_PATH = os.path.dirname(os.path.abspath(__file__)) # Gets path of the _init_.py file
 file_path = os.path.join(APP_PATH, "temp")
 MEDLINE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed"
@@ -24,11 +25,10 @@ MEDLINE_URL = MEDLINE_URL + "&api_key=" + settings.NCBI_API_KEY
 MEDLINE_URL = MEDLINE_URL + "&rettype=medline"
 MEDLINE_TEXT_URL = MEDLINE_URL + "&retmode=text&id="
 MEDLINE_XML_URL = MEDLINE_URL + "&retmode=xml&id="
-TESTING = False
+CONTENT_TYPE = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 DECLARATION_AND_DOCTYPE = '''<?xml version="1.0" ?>
 <!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
 '''
-CONTENT_TYPE = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
 def faq(request):
     """."""
@@ -58,7 +58,6 @@ def download_excel(request, pmid):
                     else:
                         id_list = id_list + "," + pid
                 text_path = file_path + "/" + str(uuid.uuid1()) + '.txt'
-                print(MEDLINE_TEXT_URL + id_list)
                 urllib.urlretrieve(MEDLINE_TEXT_URL + id_list, text_path)
                 with open(text_path, mode="r", encoding="utf-8") as handle:
                     articles = Medline.parse(handle)
@@ -68,10 +67,11 @@ def download_excel(request, pmid):
                 os.remove(text_path)
             dframe = pd.DataFrame()
             dframe = dframe.append(data, True)
-            writer = pd.ExcelWriter(io.BytesIO(), engine='xlsxwriter')
+            output = io.BytesIO()
+            writer = pd.ExcelWriter(output, engine='xlsxwriter')
             dframe.to_excel(writer, sheet_name='PubMed2XL', index=False)
             writer.save()
-            response = HttpResponse(io.BytesIO().getvalue(), content_type=CONTENT_TYPE)
+            response = HttpResponse(output.getvalue(), content_type=CONTENT_TYPE)
             response['Content-Disposition'] = "attachment; filename=" + str(uuid.uuid1()) + ".xlsx"
             return response
         else:
