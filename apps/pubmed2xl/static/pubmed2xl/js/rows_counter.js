@@ -1,12 +1,12 @@
-var lines = document.querySelector("#id_pmids").value.split(/\r\n|\r|\n/);
-$('#count').text(lines.length);
-$(document).ready(function(){
-  $("textarea").keyup(function(){
-    var lines = $("textarea").val().split(/\r|\r\n|\n/);
-    $('#count').text(lines.length);
-  });
-  $("textarea").keydown(function(){
-    var lines = $("textarea").val().split(/\r|\r\n|\n/);
-    $('#count').text(lines.length);
-  }); 
-});
+const textarea = document.querySelector("#id_pmids")
+const counter = document.getElementById('count');
+textarea.addEventListener('input', () => {
+  const text = textarea.value;
+  const lines = text.split("\n");
+  const count = lines.length;
+  row = " rows"
+  if (count <= 1){
+    row = " row"
+  }
+  counter.innerHTML = count + row;
+})
