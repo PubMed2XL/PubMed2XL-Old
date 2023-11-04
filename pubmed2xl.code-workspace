@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${HOME}/webapps/pubmed2xl/.venv/bin/python",
+		"python.envFile": "${HOME}/webapps/pubmed2xl/src/.env",
+		"python.pipenvPath": "${HOME}/webapps/pubmed2xl/.venv/lib64/python3.8/site-packages/",
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"python.terminal.activateEnvironment": true,
+		"python.terminal.executeInFileDir": true,
+	}
+}

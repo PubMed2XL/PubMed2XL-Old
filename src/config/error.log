@@ -1,0 +1,114 @@
+[2023-08-26 06:08:17 +0000] [214167] [INFO] Starting gunicorn 21.2.0
+[2023-08-26 06:08:17 +0000] [214167] [INFO] Listening at: http://127.0.0.1:8000 (214167)
+[2023-08-26 06:08:17 +0000] [214167] [INFO] Using worker: gthread
+[2023-08-26 06:08:17 +0000] [214228] [INFO] Booting worker with pid: 214228
+[2023-08-26 06:08:17 +0000] [214234] [INFO] Booting worker with pid: 214234
+[2023-08-26 06:08:17 +0000] [214238] [INFO] Booting worker with pid: 214238
+[2023-08-26 06:16:20 +0000] [214167] [INFO] Handling signal: term
+[2023-08-26 06:16:20 +0000] [214228] [INFO] Worker exiting (pid: 214228)
+[2023-08-26 06:16:20 +0000] [214234] [INFO] Worker exiting (pid: 214234)
+[2023-08-26 06:16:21 +0000] [214238] [INFO] Worker exiting (pid: 214238)
+[2023-08-26 06:16:21 +0000] [214167] [INFO] Shutting down: Master
+[2023-08-26 06:16:21 +0000] [219656] [INFO] Starting gunicorn 21.2.0
+[2023-08-26 06:16:21 +0000] [219656] [INFO] Listening at: http://127.0.0.1:8000 (219656)
+[2023-08-26 06:16:21 +0000] [219656] [INFO] Using worker: gthread
+[2023-08-26 06:16:21 +0000] [219687] [INFO] Booting worker with pid: 219687
+[2023-08-26 06:16:21 +0000] [219688] [INFO] Booting worker with pid: 219688
+[2023-08-26 06:16:21 +0000] [219689] [INFO] Booting worker with pid: 219689
+[2023-08-26 20:36:55 +0000] [219656] [INFO] Handling signal: term
+[2023-08-26 20:36:55 +0000] [219687] [INFO] Worker exiting (pid: 219687)
+[2023-08-26 20:36:55 +0000] [219688] [INFO] Worker exiting (pid: 219688)
+[2023-08-26 20:36:55 +0000] [219689] [INFO] Worker exiting (pid: 219689)
+[2023-08-26 20:36:55 +0000] [219656] [INFO] Shutting down: Master
+[2023-08-26 20:36:56 +0000] [693052] [INFO] Starting gunicorn 21.2.0
+[2023-08-26 20:36:56 +0000] [693052] [INFO] Listening at: http://127.0.0.1:8000 (693052)
+[2023-08-26 20:36:56 +0000] [693052] [INFO] Using worker: gthread
+[2023-08-26 20:36:56 +0000] [693075] [INFO] Booting worker with pid: 693075
+[2023-08-26 20:36:56 +0000] [693076] [INFO] Booting worker with pid: 693076
+[2023-08-26 20:36:56 +0000] [693082] [INFO] Booting worker with pid: 693082
+[2023-08-26 20:37:09 +0000] [693052] [INFO] Handling signal: term
+[2023-08-26 20:37:10 +0000] [693075] [INFO] Worker exiting (pid: 693075)
+[2023-08-26 20:37:10 +0000] [693076] [INFO] Worker exiting (pid: 693076)
+[2023-08-26 20:37:10 +0000] [693082] [INFO] Worker exiting (pid: 693082)
+[2023-08-26 20:37:10 +0000] [693052] [INFO] Shutting down: Master
+[2023-08-26 20:37:10 +0000] [693131] [INFO] Starting gunicorn 21.2.0
+[2023-08-26 20:37:10 +0000] [693131] [INFO] Listening at: http://127.0.0.1:8000 (693131)
+[2023-08-26 20:37:10 +0000] [693131] [INFO] Using worker: gthread
+[2023-08-26 20:37:10 +0000] [693148] [INFO] Booting worker with pid: 693148
+[2023-08-26 20:37:10 +0000] [693149] [INFO] Booting worker with pid: 693149
+[2023-08-26 20:37:10 +0000] [693150] [INFO] Booting worker with pid: 693150
+[2023-08-26 20:46:43 +0000] [693131] [INFO] Handling signal: term
+[2023-08-26 20:46:43 +0000] [693149] [INFO] Worker exiting (pid: 693149)
+[2023-08-26 20:46:44 +0000] [693150] [INFO] Worker exiting (pid: 693150)
+[2023-08-26 20:46:44 +0000] [693148] [INFO] Worker exiting (pid: 693148)
+[2023-08-26 20:46:44 +0000] [693131] [INFO] Shutting down: Master
+[2023-08-27 21:06:56 +0000] [1128] [INFO] Starting gunicorn 21.2.0
+[2023-08-27 21:06:56 +0000] [1128] [INFO] Listening at: http://127.0.0.1:8000 (1128)
+[2023-08-27 21:06:56 +0000] [1128] [INFO] Using worker: gthread
+[2023-08-27 21:06:56 +0000] [2342] [INFO] Booting worker with pid: 2342
+[2023-08-27 21:06:56 +0000] [2344] [INFO] Booting worker with pid: 2344
+[2023-08-27 21:06:56 +0000] [2350] [INFO] Booting worker with pid: 2350
+[2023-09-07 07:23:52 +0000] [1128] [INFO] Handling signal: term
+[2023-09-07 07:23:53 +0000] [2350] [INFO] Worker exiting (pid: 2350)
+[2023-09-07 07:23:53 +0000] [2342] [INFO] Worker exiting (pid: 2342)
+[2023-09-07 07:23:53 +0000] [2344] [INFO] Worker exiting (pid: 2344)
+[2023-09-07 07:23:53 +0000] [1128] [INFO] Shutting down: Master
+[2023-09-07 07:26:40 +0000] [1197] [INFO] Starting gunicorn 21.2.0
+[2023-09-07 07:26:40 +0000] [1197] [INFO] Listening at: http://127.0.0.1:8000 (1197)
+[2023-09-07 07:26:40 +0000] [1197] [INFO] Using worker: gthread
+[2023-09-07 07:26:40 +0000] [2412] [INFO] Booting worker with pid: 2412
+[2023-09-07 07:26:40 +0000] [2417] [INFO] Booting worker with pid: 2417
+[2023-09-07 07:26:40 +0000] [2432] [INFO] Booting worker with pid: 2432
+[2023-09-17 16:54:42 +0000] [1321] [INFO] Starting gunicorn 21.2.0
+[2023-09-17 16:54:42 +0000] [1321] [INFO] Listening at: http://127.0.0.1:8000 (1321)
+[2023-09-17 16:54:42 +0000] [1321] [INFO] Using worker: gthread
+[2023-09-17 16:54:42 +0000] [2599] [INFO] Booting worker with pid: 2599
+[2023-09-17 16:54:42 +0000] [2628] [INFO] Booting worker with pid: 2628
+[2023-09-17 16:54:42 +0000] [2629] [INFO] Booting worker with pid: 2629
+[2023-09-20 22:34:46 +0000] [1225] [INFO] Starting gunicorn 21.2.0
+[2023-09-20 22:34:46 +0000] [1225] [INFO] Listening at: http://127.0.0.1:8000 (1225)
+[2023-09-20 22:34:46 +0000] [1225] [INFO] Using worker: gthread
+[2023-09-20 22:34:46 +0000] [1287] [INFO] Booting worker with pid: 1287
+[2023-09-20 22:34:46 +0000] [1288] [INFO] Booting worker with pid: 1288
+[2023-09-20 22:34:46 +0000] [1289] [INFO] Booting worker with pid: 1289
+[2023-09-24 17:37:23 +0000] [1249] [INFO] Starting gunicorn 21.2.0
+[2023-09-24 17:37:23 +0000] [1249] [INFO] Listening at: http://127.0.0.1:8000 (1249)
+[2023-09-24 17:37:23 +0000] [1249] [INFO] Using worker: gthread
+[2023-09-24 17:37:23 +0000] [2641] [INFO] Booting worker with pid: 2641
+[2023-09-24 17:37:23 +0000] [2642] [INFO] Booting worker with pid: 2642
+[2023-09-24 17:37:23 +0000] [2644] [INFO] Booting worker with pid: 2644
+[2023-09-26 15:40:29 +0000] [1179] [INFO] Starting gunicorn 21.2.0
+[2023-09-26 15:40:29 +0000] [1179] [INFO] Listening at: http://127.0.0.1:8000 (1179)
+[2023-09-26 15:40:29 +0000] [1179] [INFO] Using worker: gthread
+[2023-09-26 15:40:29 +0000] [2530] [INFO] Booting worker with pid: 2530
+[2023-09-26 15:40:29 +0000] [2558] [INFO] Booting worker with pid: 2558
+[2023-09-26 15:40:29 +0000] [2560] [INFO] Booting worker with pid: 2560
+[2023-09-27 21:30:48 +0000] [1364] [INFO] Starting gunicorn 21.2.0
+[2023-09-27 21:30:48 +0000] [1364] [INFO] Listening at: http://127.0.0.1:8000 (1364)
+[2023-09-27 21:30:48 +0000] [1364] [INFO] Using worker: gthread
+[2023-09-27 21:30:48 +0000] [2615] [INFO] Booting worker with pid: 2615
+[2023-09-27 21:30:48 +0000] [2617] [INFO] Booting worker with pid: 2617
+[2023-09-27 21:30:48 +0000] [2625] [INFO] Booting worker with pid: 2625
+[2023-09-29 05:14:20 +0000] [1232] [INFO] Starting gunicorn 21.2.0
+[2023-09-29 05:14:20 +0000] [1232] [INFO] Listening at: http://127.0.0.1:8000 (1232)
+[2023-09-29 05:14:20 +0000] [1232] [INFO] Using worker: gthread
+[2023-09-29 05:14:20 +0000] [2505] [INFO] Booting worker with pid: 2505
+[2023-09-29 05:14:20 +0000] [2507] [INFO] Booting worker with pid: 2507
+[2023-09-29 05:14:20 +0000] [2509] [INFO] Booting worker with pid: 2509
+[2023-09-29 19:36:58 +0000] [1221] [INFO] Starting gunicorn 21.2.0
+[2023-09-29 19:36:58 +0000] [1221] [INFO] Listening at: http://127.0.0.1:8000 (1221)
+[2023-09-29 19:36:58 +0000] [1221] [INFO] Using worker: gthread
+[2023-09-29 19:36:58 +0000] [2609] [INFO] Booting worker with pid: 2609
+[2023-09-29 19:36:58 +0000] [2680] [INFO] Booting worker with pid: 2680
+[2023-09-29 19:36:58 +0000] [2689] [INFO] Booting worker with pid: 2689
+[2023-09-29 19:40:27 +0000] [1221] [INFO] Handling signal: term
+[2023-09-29 19:40:27 +0000] [2609] [INFO] Worker exiting (pid: 2609)
+[2023-09-29 19:40:28 +0000] [2680] [INFO] Worker exiting (pid: 2680)
+[2023-09-29 19:40:28 +0000] [2689] [INFO] Worker exiting (pid: 2689)
+[2023-09-29 19:40:28 +0000] [1221] [INFO] Shutting down: Master
+[2023-09-29 19:41:45 +0000] [1468] [INFO] Starting gunicorn 21.2.0
+[2023-09-29 19:41:45 +0000] [1468] [INFO] Listening at: http://127.0.0.1:8000 (1468)
+[2023-09-29 19:41:45 +0000] [1468] [INFO] Using worker: gthread
+[2023-09-29 19:41:45 +0000] [2762] [INFO] Booting worker with pid: 2762
+[2023-09-29 19:41:46 +0000] [2783] [INFO] Booting worker with pid: 2783
+[2023-09-29 19:41:46 +0000] [2786] [INFO] Booting worker with pid: 2786
