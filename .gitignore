@@ -1,4 +1,11 @@
-
-.env_ignore
-config/settings_ignore.py
-apps/pubmed2xl/static/pubmed2xl/test.txt
+.env
+error.log
+db.sqlite3
+__pycache__
+pubmed2xl.code-workspace
+/src/apps/pubmed2xl/temp
+/venv
+/.venv
+/.vscode
+/static
+/media
